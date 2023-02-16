@@ -18,7 +18,7 @@ import numpy as np
 from dhtnet.experiment_planning.experiment_planner_baseline_3DUNet_v21 import \
     ExperimentPlanner3D_v21
 from dhtnet.experiment_planning.common_utils import get_pool_and_conv_props
-from dhtnet.network_architecture.generic_Ours import Generic_UNet
+from dhtnet.network_architecture.Generic_nnUNet import Generic_UNet
 from dhtnet.paths import *
 
 

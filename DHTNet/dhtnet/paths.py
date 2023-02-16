@@ -16,7 +16,7 @@ import os
 from batchgenerators.utilities.file_and_folder_operations import maybe_mkdir_p, join
 
 # do not modify these unless you know what you are doing
-my_output_identifier = "DHTNet/nnunet"
+my_output_identifier = "DHTNet/"
 default_plans_identifier = "DHTNetPlansv2.1"
 default_data_identifier = 'DHTNetData_plans_v2.1'
 default_trainer = "DHTNetTrainerV2"

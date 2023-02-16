@@ -102,7 +102,7 @@ def main():
         task_name = convert_id_to_task_name(i)
 
         if args.verify_dataset_integrity:
-            verify_dataset_integrity(join(nnUNet_raw_data, task_name))
+            verify_dataset_integrity(join(DHTNet_raw_data, task_name))
 
         crop(task_name, False, tf)
 
@@ -128,7 +128,7 @@ def main():
 
     for t in tasks:
         print("\n\n\n", t)
-        cropped_out_dir = os.path.join(nnUNet_cropped_data, t)
+        cropped_out_dir = os.path.join(DHTNet_cropped_data, t)
         preprocessing_output_dir_this_task = os.path.join(preprocessing_output_dir, t)
         #splitted_4d_output_dir_task = os.path.join(nnUNet_raw_data, t)
         #lists, modalities = create_lists_from_splitted_dataset(splitted_4d_output_dir_task)
@@ -143,7 +143,7 @@ def main():
 
         maybe_mkdir_p(preprocessing_output_dir_this_task)
         shutil.copy(join(cropped_out_dir, "dataset_properties.pkl"), preprocessing_output_dir_this_task)
-        shutil.copy(join(nnUNet_raw_data, t, "dataset.json"), preprocessing_output_dir_this_task)
+        shutil.copy(join(DHTNet_raw_data, t, "dataset.json"), preprocessing_output_dir_this_task)
 
         threads = (tl, tf)
 

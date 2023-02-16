@@ -16,7 +16,7 @@ from batchgenerators.utilities.file_and_folder_operations import *
 from multiprocessing import Pool
 
 from dhtnet.configuration import default_num_threads
-from dhtnet.paths import nnUNet_raw_data, nnUNet_cropped_data
+from dhtnet.paths import DHTNet_raw_data, DHTNet_cropped_data
 import numpy as np
 import pickle
 from dhtnet.preprocessing.cropping import get_patient_identifiers_from_cropped_files

@@ -358,7 +358,7 @@ class DC_and_CE_loss(nn.Module):
             result = self.weight_ce * ce_loss + self.weight_dice * dc_loss
         else:
             raise NotImplementedError("nah son") # reserved for other stuff (later)
-        return result
+        return 1 + result
 
 
 class DC_and_BCE_loss(nn.Module):

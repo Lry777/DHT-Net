@@ -1,15 +1,15 @@
 import os
 from collections import OrderedDict
 import json
-from dhtnet.paths import base
+from dhtnet.paths import DHTNet_raw_data
 
 def gen_json():
-    base_folder = os.path.join(base, 'Task099_LiTS')
+    base_folder = os.path.join(DHTNet_raw_data, 'Task099_LiTS')
 
     tr_image_folder = os.path.join(base_folder, "imagesTr")
     ts_image_folder = os.path.join(base_folder, 'imagesTs')
     tr_label_folder = os.path.join(base_folder, 'labelsTr')
-    # ts_label_folder = os.path.join(base_folder, 'labelsTs')
+    ts_label_folder = os.path.join(base_folder, 'labelsTs')
     tr_images = os.listdir(tr_image_folder)
     tr_labels = os.listdir(tr_label_folder)
     ts_images = os.listdir(ts_image_folder)
@@ -28,8 +28,6 @@ def gen_json():
         "0": "background",
         "1": "liver",
         "2": "tumor",
-        # "3": "33",
-        # "4": "44"
     }
     json_dict['numTraining'] = len(tr_images)
     json_dict['numTest'] = len(ts_images)

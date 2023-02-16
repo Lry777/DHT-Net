@@ -21,14 +21,13 @@ from dhtnet.training.load_pretrained_weights import load_pretrained_weights
 from dhtnet.training.network_training.DHTNetTrainerV2 import TrainerV2
 from dhtnet.utilities.task_name_id_conversion import convert_id_to_task_name
 
-# export OPM_NUM_THREADS=1
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--network", default="3d_fullres")
     parser.add_argument("--network_trainer", default="DHTNetTrainerV2")
     parser.add_argument("-t", "--task_ids", help="can be task name or task id")
-    parser.add_argument("-f", "--flod", help='0, 1, ..., 5 or \'all\'')
+    parser.add_argument("-f", "--fold", help='0, 1, ..., 5 or \'all\'')
     parser.add_argument("-val", "--validation_only", help="use this if you want to only run the validation",
                         action="store_true")
     parser.add_argument("-c", "--continue_training", help="use this if you want to continue a training",
@@ -90,7 +89,7 @@ def main():
 
     args = parser.parse_args()
 
-    task = args.task
+    task = args.task_ids
     fold = args.fold
     network = args.network
     network_trainer = args.network_trainer
