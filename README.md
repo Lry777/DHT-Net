@@ -1,7 +1,7 @@
 # DHT-Net:Dynamic Hierarchical Transformer Network for Liver and Tumor Segmentation
 This is the official pytorch implementation of the DHT-Net:
 
-![image](https://github.com/Lry777/DHT-Net/dhtnet.jpeg)
+<img src="" width="512px" />
 
 # Requirements
 CUDA 11.0
