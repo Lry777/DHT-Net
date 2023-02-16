@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ae2a38b5-8d63-4c7f-9e36-ce96610c61c4" name="we_network">
+        <fileTransfer rootFolder="/root" accessType="SFTP" host="192.168.29.160" port="16782" sshConfigId="8ac3b569-4537-4327-a0a0-f762c6c749eb" sshConfig="root@192.168.29.160:16782 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="6c5cb7ec-5ede-4349-9b33-51e67d66ba6b" name="user_we_network">
+        <fileTransfer rootFolder="/home/user" accessType="SFTP" host="www.resnet.cc" port="36782" sshConfigId="065fddf0-a58e-4097-b5e6-cda9a0a593a3" sshConfig="user@www.resnet.cc:36782 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="d052dcd4-ed86-4118-8ea9-7d071baa4004" name="188_we_network">
+        <fileTransfer rootFolder="/root" accessType="SFTP" host="192.168.29.188" port="16782" sshConfigId="073acdbc-37d4-4f39-83ef-7567bc9bdc13" sshConfig="root@192.168.29.188:16782 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="02c59fcf-5c8a-416f-a93f-31bcfbe5f62d" name="188_segformer">
+        <fileTransfer rootFolder="/root/" accessType="SFTP" host="192.168.29.188" port="16782" sshConfigId="073acdbc-37d4-4f39-83ef-7567bc9bdc13" sshConfig="root@192.168.29.188:16782 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="557c81e9-6c5c-4562-85e2-8ebd40ec6afd" name="160_segformer">
+        <fileTransfer rootFolder="/root" accessType="SFTP" host="192.168.29.160" port="16782" sshConfigId="8ac3b569-4537-4327-a0a0-f762c6c749eb" sshConfig="root@192.168.29.160:16782 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="0869deab-a92e-4d7d-8660-4fce9242b2be" name="161_we_network">
+        <fileTransfer rootFolder="/root" accessType="SFTP" host="192.168.29.161" port="16782" sshConfigId="309bbfab-4a7b-4915-afc2-e15b6f9b2286" sshConfig="root@192.168.29.161:16782 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="7ccb20cd-b1f2-4a02-a2b8-aeadf21373fb" name="v100_we_network">
+        <fileTransfer rootFolder="/root" accessType="SFTP" host="192.168.137.13" port="17190" sshConfigId="84da901a-4947-46d1-abab-74a9d6446206" sshConfig="root@192.168.137.13:17190 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
