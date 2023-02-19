@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="VcsDirectoryMappings">
-    <mapping directory="$PROJECT_DIR$/mmclassification" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/mmdetection" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/mmsegmentation" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/net3d" vcs="Git" />
-  </component>
-</project>
